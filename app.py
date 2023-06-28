@@ -35,7 +35,7 @@ st.write(f"Bioguide: {entry['bioguide']}")
 
 # Get the input from the user
 label = st.radio(
-    "<b>Is this the same person?</b>",
+    "Is this the same person?",
     ('Yes', 'No', "Don't know")
 )
 
