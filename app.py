@@ -68,3 +68,19 @@ with col2:
 
 st.write(f"You are at row {row+1} of {len(data)}")
 
+# Download
+
+def convert_df(df):
+   return df.to_csv(index=False).encode('utf-8')
+
+
+csv = convert_df(data)
+
+st.download_button(
+   "Press to Download",
+   csv,
+   "file.csv",
+   "text/csv",
+   key='download-csv'
+)
+
