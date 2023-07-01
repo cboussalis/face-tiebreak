@@ -70,6 +70,7 @@ st.write(f"You are at row {row+1} of {len(data)}")
 
 # Download
 
+@st.experimental_memo
 def convert_df(df):
    return df.to_csv(index=False).encode('utf-8')
 
