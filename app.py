@@ -8,7 +8,7 @@ from io import BytesIO
 data = pd.read_csv('disagree_to_code.csv')
 
 # Checkbox to control whether only empty label rows are displayed
-only_empty = st.checkbox('Show only rows where label is empty', value=True)
+only_empty = st.checkbox('Show only rows where label is empty', value=False)
 
 # Find the first row where 'label' is empty 
 empty_rows = iter(data[data['label'].isna()].index)
