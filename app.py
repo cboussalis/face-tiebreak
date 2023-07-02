@@ -33,6 +33,9 @@ else:
 # Display bioguide
 st.write(f"Bioguide: {entry['bioguide']}")
 
+# Display coding
+st.write(f"Coding: {entry['label']}")
+
 # Get the input from the user
 label = st.radio(
     "Is this the same person?",
